@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_icon"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_categoires"
+            android:icon="@drawable/category_icon"
+            android:title="@string/menu_categories" />
+        <item
+            android:id="@+id/nav_local"
+            android:icon="@drawable/location_icon"
+            android:title="@string/menu_local" />
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/account_icon"
+            android:title="@string/menu_account" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/share_icon"
+            android:title="@string/menu_share" />
+    </group>
+</menu>
