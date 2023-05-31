@@ -20,4 +20,19 @@
         android:name="mz.ac.isutc.lecc31.fais.Samuel.ui.create_account.Create_accountFragment"
         android:label="@string/menu_conta"
         tools:layout="@layout/fragment_create_account" />
+    <fragment
+        android:id="@+id/nav_event_details"
+        android:name="mz.ac.isutc.lecc31.fais.Samuel.ui.event_details.Event_detailsFragment"
+        android:label="@string/menu_event"
+        tools:layout="@layout/fragment_event_details" />
+    <fragment
+        android:id="@+id/nav_checkout"
+        android:name="mz.ac.isutc.lecc31.fais.Samuel.ui.checkout.CheckoutFragment"
+        android:label="@string/menu_checkout"
+        tools:layout="@layout/fragment_checkout" />
+    <fragment
+        android:id="@+id/nav_payment_confirmation"
+        android:name="mz.ac.isutc.lecc31.fais.Samuel.ui.payment_confirmation.Payment_confirmationFragment"
+        android:label="@string/menu_payment_confirmation"
+        tools:layout="@layout/fragment_payment_confirmation" />
 </navigation>

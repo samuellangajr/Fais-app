@@ -10,6 +10,7 @@
     <string name="menu_account">Conta</string>
     <string name="menu_share">Partilhar</string>
     <string name="title_activity_settings">SettingsActivity</string>
+    <string name="site">Ir para web</string>
 
     <string name="menu_conta">Conta</string>
     <string name="menu_login">Login</string>
@@ -25,6 +26,31 @@
     <string name="tipo_conta">Tipo de conta</string>
     <string name="comprador">Comprador</string>
     <string name="promotor">Promotor</string>
+
+    <string name="menu_event">Evento</string>
+    <string name="event_details">Detalhes do Evento</string>
+
+    <string name="categoria">Categoria: Show</string>
+    <string name="imposto_msg">(Imposto adiconal pode ser aplicado no checkout)</string>
+    <string name="quant_normal">Quant...Normal</string>
+    <string name="quant_vip">Quant...Vip</string>
+    <string name="btn_comprar">Comprar</string>
+    <string name="btn_reservar">Reservar</string>
+    <string name="duvida">Tem alguma dúvida sobre o evento? Sinta-se à vontade para entrar em contato com o promotor via e-mail ou chamada</string>
+    <string name="contacto">Contacto: 843671529</string>
+    <string name="email_promotor">Email: samuellangajr@gmail.com</string>
+    <string name="outros_eventos">Outros Eventos</string>
+
+    <string name="menu_checkout">Checkout</string>
+    <string name="numero_celular">Numero de celular</string>
+    <string-array name="metodo_pagamento">
+        <item>MPESA</item>
+        <item>Emola</item>
+    </string-array>
+    <string name="btn_seguinte">Seguinte</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <string name="menu_payment_confirmation">Confirmar Pagamento</string>
+    <string name="btn_confirmar">Confirmo</string>
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>
     <string name="sync_header">Sync</string>

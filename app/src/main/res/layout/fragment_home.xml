@@ -6,15 +6,18 @@
     android:layout_height="match_parent"
 
     tools:context=".ui.home.HomeFragment">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-    <include layout="@layout/event_card1" />
 
-    <include layout="@layout/event_card2" />
+    <LinearLayout
+        android:id="@+id/event_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <include layout="@layout/event_card3" />
-</LinearLayout>
+        <include layout="@layout/event_card1" />
+
+        <include layout="@layout/event_card2" />
+
+        <include layout="@layout/event_card3" />
+    </LinearLayout>
 
 </ScrollView>

@@ -1,6 +1,9 @@
 package mz.ac.isutc.lecc31.fais.Samuel;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
 
@@ -38,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
 
@@ -48,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
     }
 
     @Override
@@ -62,4 +68,25 @@ public class MainActivity extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.action_search) {
+            // Ação do item de pesquisa
+            return true;
+        } else if (id == R.id.action_settings) {
+            // Ação do item de configurações
+            return true;
+        } else if (id == R.id.action_site) {
+            // Ação do item de website
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://samuellangajr.github.io/Fais/index.html"));
+            startActivity(intent);
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+
 }
