@@ -13,7 +13,11 @@
     <fragment
         android:id="@+id/nav_login"
         android:name="mz.ac.isutc.lecc31.fais.Samuel.ui.login.LoginFragment"
-        android:label="@string/menu_login"
+        android:label="@string/menu_conta"
         tools:layout="@layout/fragment_login" />
-
+    <fragment
+        android:id="@+id/nav_create_account"
+        android:name="mz.ac.isutc.lecc31.fais.Samuel.ui.create_account.Create_accountFragment"
+        android:label="@string/menu_conta"
+        tools:layout="@layout/fragment_create_account" />
 </navigation>

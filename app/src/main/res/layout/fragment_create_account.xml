@@ -1,29 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context=".ui.login.LoginFragment">
+    tools:context=".ui.create_account.Create_accountFragment">
 
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="76dp"
-        android:layout_height="99dp"
-        android:src="@drawable/logo_orange" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:text="@string/menu_login"
+        android:text="@string/menu_create_account"
         android:textSize="34sp" />
-
+    <EditText
+        android:id="@+id/nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/input_background"
+        android:ems="10"
+        android:hint="@string/nome"
+        android:inputType="textPersonName"
+        android:padding="10sp" />
     <EditText
         android:id="@+id/email"
         android:layout_width="match_parent"
@@ -45,37 +47,41 @@
         android:hint="@string/password"
         android:inputType="textPersonName"
         android:padding="10sp" />
-
-    <LinearLayout
+    <EditText
+        android:id="@+id/repetir_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:orientation="horizontal"
-        android:paddingVertical="10dp">
+        android:background="@drawable/input_background"
+        android:ems="10"
+        android:hint="@string/repetir_password"
+        android:inputType="textPersonName"
+        android:padding="10sp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="@string/forget_pass"
-            android:textSize="16sp" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/nav_create_account"
-            android:layout_width="220dp"
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/create_account"
-            android:textColor="@color/blue"
-            android:textSize="16sp" />
-    </LinearLayout>
+            android:text="@string/comprador"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/promotor" />
+    </RadioGroup>
 
     <Button
-        android:id="@+id/entrar"
+        android:id="@+id/criar_conta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/buy_button"
         android:padding="10sp"
-        android:text="@string/Entrar" />
+        android:text="@string/create_account" />
 
 </LinearLayout>

@@ -11,14 +11,20 @@
     <string name="menu_share">Partilhar</string>
     <string name="title_activity_settings">SettingsActivity</string>
 
+    <string name="menu_conta">Conta</string>
     <string name="menu_login">Login</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
-<string name="forget_pass">Não tem conta?</string>
+    <string name="forget_pass">Não tem conta?</string>
     <string name="create_account">Criar</string>
     <string name="Entrar">Entrar</string>
 
-
+    <string name="menu_create_account">Criar Conta</string>
+    <string name="nome">Nome</string>
+    <string name="repetir_password">Repetir a Password</string>
+    <string name="tipo_conta">Tipo de conta</string>
+    <string name="comprador">Comprador</string>
+    <string name="promotor">Promotor</string>
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>
     <string name="sync_header">Sync</string>
@@ -33,6 +39,8 @@
     <string name="attachment_summary_on">Automatically download attachments for incoming emails
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
