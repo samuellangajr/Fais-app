@@ -51,6 +51,18 @@
     <string name="btn_cancelar">Cancelar</string>
     <string name="menu_payment_confirmation">Confirmar Pagamento</string>
     <string name="btn_confirmar">Confirmo</string>
+
+    <string name="create_event">Criar Evento</string>>
+    <string-array name="categorias">
+        <item>Show</item>
+        <item>Teatro</item>
+        <item>Conferência</item>
+        <item>Seminario</item>
+        <item>Workshop</item>
+        <item>Outro</item>
+    </string-array>
+
+
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>
     <string name="sync_header">Sync</string>

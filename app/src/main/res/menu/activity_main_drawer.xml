@@ -9,14 +9,14 @@
             android:id="@+id/nav_home"
             android:icon="@drawable/home_icon"
             android:title="@string/menu_home" />
-        <item
+        <!--<item
             android:id="@+id/nav_categoires"
             android:icon="@drawable/category_icon"
             android:title="@string/menu_categories" />
         <item
             android:id="@+id/nav_local"
             android:icon="@drawable/location_icon"
-            android:title="@string/menu_local" />
+            android:title="@string/menu_local" />-->
         <item
             android:id="@+id/nav_login"
             android:icon="@drawable/account_icon"

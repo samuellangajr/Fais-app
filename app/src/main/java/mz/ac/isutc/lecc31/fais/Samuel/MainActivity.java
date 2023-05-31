@@ -36,12 +36,10 @@ public class MainActivity extends AppCompatActivity {
         binding.appBarMain.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Adicionar novo evento", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-
+                NavController navController = Navigation.findNavController(MainActivity.this, R.id.nav_host_fragment_content_main);
+                navController.navigate(R.id.nav_create_event);
             }
         });
-
 
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
@@ -72,10 +70,10 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
 
-        if (id == R.id.action_search) {
+        /*if (id == R.id.action_search) {
             // Ação do item de pesquisa
             return true;
-        } else if (id == R.id.action_settings) {
+        } else */if (id == R.id.action_settings) {
             // Ação do item de configurações
             return true;
         } else if (id == R.id.action_site) {

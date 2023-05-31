@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.promotor.Create_eventFragment">
+<LinearLayout
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/input_background"
+        android:ems="10"
+        android:hint="@string/nome"
+        android:inputType="textPersonName"
+        android:padding="10sp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:entries="@array/categorias"
+        android:inputType="textPersonName"
+        android:padding="10sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data de inicio" />
+
+    <EditText
+        android:id="@+id/editTextDate3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data de fim" />
+
+    <EditText
+        android:id="@+id/editTextDate2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/editTextNumberSigned4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input_background"
+        android:ems="10"
+        android:hint="Quant..tickects normais"
+        android:inputType="numberSigned"
+        android:padding="10dp" />
+    <EditText
+        android:id="@+id/editTextNumberSigned"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input_background"
+        android:ems="10"
+        android:hint="Preço do ticket normal"
+        android:inputType="numberSigned"
+        android:padding="10dp" />
+    <EditText
+        android:id="@+id/editTextNumberSigned2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input_background"
+        android:ems="10"
+        android:hint="Quant..tickets vip"
+        android:inputType="numberSigned"
+        android:padding="10dp" />
+    <EditText
+        android:id="@+id/editTextNumberSigned3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input_background"
+        android:ems="10"
+        android:hint="Preço do ticket Vip"
+        android:inputType="numberSigned"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input_background"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Descrição"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:padding="10dp" />
+
+    <ImageView
+        android:id="@+id/imgGallery"
+        android:layout_width="match_parent"
+        android:layout_height="147dp"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/add_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buy_button"
+        android:text="+ Adicionar capa do evento" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/seguinte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/buy_button"
+            android:padding="10dp"
+            android:text="Criar" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cancel_button"
+            android:padding="10dp"
+            android:text="@string/btn_cancelar" />
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

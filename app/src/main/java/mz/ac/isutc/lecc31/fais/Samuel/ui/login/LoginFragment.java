@@ -30,7 +30,13 @@ public class LoginFragment extends Fragment {
                 navController.navigate(R.id.nav_create_account);
             }
         });
-
+    loginBinding.entrar.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            NavController navController = Navigation.findNavController(requireActivity(), R.id.nav_host_fragment_content_main);
+            navController.navigate(R.id.nav_home_promotor);
+        }
+    });
         return loginBinding.getRoot();
     }
 }

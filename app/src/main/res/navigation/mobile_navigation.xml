@@ -35,4 +35,24 @@
         android:name="mz.ac.isutc.lecc31.fais.Samuel.ui.payment_confirmation.Payment_confirmationFragment"
         android:label="@string/menu_payment_confirmation"
         tools:layout="@layout/fragment_payment_confirmation" />
+    <fragment
+        android:id="@+id/nav_create_event"
+        android:name="mz.ac.isutc.lecc31.fais.Samuel.ui.promotor.Create_eventFragment"
+        android:label="@string/create_event"
+        tools:layout="@layout/fragment_create_event" />
+    <fragment
+        android:id="@+id/nav_dashboard_participante"
+        android:name="mz.ac.isutc.lecc31.fais.Samuel.ui.participante.Dashboard_participanteFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard_participante" />
+    <fragment
+        android:id="@+id/nav_home_promotor"
+        android:name="mz.ac.isutc.lecc31.fais.Samuel.ui.promotor.Home_promotorFragment"
+        android:label="Seus eventos"
+        tools:layout="@layout/fragment_home_promotor" />
+    <fragment
+        android:id="@+id/nav_dashboard_promotor"
+        android:name="mz.ac.isutc.lecc31.fais.Samuel.ui.promotor.Dashboard_promotorFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard_promotor" />
 </navigation>
