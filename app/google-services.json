@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "363636623272",
+    "project_id": "fais-8914d",
+    "storage_bucket": "fais-8914d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:363636623272:android:c89dd644587f00ba2a3f9d",
+        "android_client_info": {
+          "package_name": "mz.ac.isutc.lecc31.fais.Samuel"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDELCssi0ukWVlkhJ6XsBICzTDQTPKTmRE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

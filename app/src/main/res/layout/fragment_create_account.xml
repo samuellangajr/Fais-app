@@ -59,15 +59,15 @@
         android:padding="10sp" />
 
     <RadioGroup
+        android:id="@+id/tipo_conta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <RadioButton
-            android:id="@+id/radioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/comprador"
-            android:checked="true" />
+            android:checked="true"
+            android:text="@string/comprador" />
 
         <RadioButton
             android:id="@+id/radioButton2"
