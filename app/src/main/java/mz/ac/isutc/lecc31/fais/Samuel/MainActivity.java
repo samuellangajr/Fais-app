@@ -36,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
         binding.appBarMain.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //verifica se o user é um promotor
+
                 NavController navController = Navigation.findNavController(MainActivity.this, R.id.nav_host_fragment_content_main);
                 navController.navigate(R.id.nav_create_event);
             }
