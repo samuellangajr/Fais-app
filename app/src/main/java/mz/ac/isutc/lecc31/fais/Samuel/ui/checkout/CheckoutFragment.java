@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,9 +25,23 @@ private FragmentCheckoutBinding checkoutBinding;
             @Override
             public void onClick(View view) {
                 NavController navController = Navigation.findNavController(requireActivity(), R.id.nav_host_fragment_content_main);
-                navController.navigate(R.id.nav_payment_confirmation);
+                Bundle bundle = new Bundle();
+                Bundle bundle2 = getArguments();
+                bundle.putString("nome", checkoutBinding.nome.getText().toString());
+                bundle.putString("email", checkoutBinding.email.getText().toString());
+                bundle.putString("celular", checkoutBinding.celular.getText().toString());
+                bundle.putString("metodo", checkoutBinding.metodo.getSelectedItem().toString());
+                bundle.putString("evento", bundle2.getString("event"));
+                bundle.putString("quantidade_normal", bundle2.getString("quant_normal"));
+                bundle.putString("quantidade_vip", bundle2.getString("quant_vip"));
+                bundle.putString("preco_normal", bundle2.getString("prec_normal"));
+                bundle.putString("preco_vip", bundle2.getString("prec_vip"));
+
+                navController.navigate(R.id.nav_payment_confirmation, bundle);
+
             }
         });
+
         return checkoutBinding.getRoot();
     }
 }

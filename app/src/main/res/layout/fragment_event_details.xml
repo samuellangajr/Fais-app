@@ -15,12 +15,13 @@
         android:orientation="vertical">
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/eventImage"
             android:layout_width="match_parent"
             android:layout_height="223dp"
             android:src="@drawable/event1" />
 
         <TextView
+            android:id="@+id/eventCategorie"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginTop="10dp"
@@ -31,6 +32,7 @@
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/eventTitle"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginTop="15dp"
@@ -40,6 +42,7 @@
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/eventPrice"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginTop="10dp"
@@ -49,6 +52,7 @@
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/eventVipPrice"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginTop="10dp"
@@ -68,7 +72,7 @@
             android:textSize="12sp" />
 
         <EditText
-            android:id="@+id/editTextNumberSigned"
+            android:id="@+id/quant_normal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -79,7 +83,7 @@
             android:padding="10dp" />
 
         <EditText
-            android:id="@+id/editTextNumberSigned2"
+            android:id="@+id/quant_vip"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -117,6 +121,7 @@
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/eventDetail"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginTop="10dp"
@@ -143,6 +148,7 @@
                 android:textSize="14sp" />
 
             <TextView
+                android:id="@+id/eventPromotor"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginTop="10dp"
@@ -152,14 +158,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginTop="10dp"
-                android:layout_weight="1"
-                android:text="@string/contacto"
-                android:textSize="16sp" />
-
-            <TextView
+                android:id="@+id/eventEmailPromotor"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginTop="10dp"

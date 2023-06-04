@@ -12,6 +12,8 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
 import com.bumptech.glide.Glide;
 import com.google.firebase.firestore.CollectionReference;
@@ -96,9 +98,17 @@ public class HomeFragment extends Fragment {
                     //.placeholder(R.drawable.loading) // Imagem de placeholder enquanto a imagem é carregada
                     //.error(R.drawable.erro) // Imagem de erro, caso ocorra algum problema ao carregar a imagem
                     .into(eventImage);
-
+            eventCardView.setOnClickListener(view -> openEventDetails(event));
 
             eventCardContainer.addView(eventCardView);
         }
     }
+    private void openEventDetails(Evento evento) {
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("evento", evento);
+
+        NavController navController = Navigation.findNavController(requireActivity(), R.id.nav_host_fragment_content_main);
+        navController.navigate(R.id.nav_event_details, bundle);
+    }
+
 }

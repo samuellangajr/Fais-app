@@ -1,6 +1,8 @@
 package mz.ac.isutc.lecc31.fais.Samuel.models;
 
-public class Evento {
+import java.io.Serializable;
+
+public class Evento implements Serializable {
     private String id_evento;
     private String id_promotor;
     private String image_url;
