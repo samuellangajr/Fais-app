@@ -32,6 +32,7 @@ private FragmentCheckoutBinding checkoutBinding;
                 bundle.putString("celular", checkoutBinding.celular.getText().toString());
                 bundle.putString("metodo", checkoutBinding.metodo.getSelectedItem().toString());
                 bundle.putString("evento", bundle2.getString("event"));
+                bundle.putString("id_evento", bundle2.getString("event_id"));
                 bundle.putString("quantidade_normal", bundle2.getString("quant_normal"));
                 bundle.putString("quantidade_vip", bundle2.getString("quant_vip"));
                 bundle.putString("preco_normal", bundle2.getString("prec_normal"));

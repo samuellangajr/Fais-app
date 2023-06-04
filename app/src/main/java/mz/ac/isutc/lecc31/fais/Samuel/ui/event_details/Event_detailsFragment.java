@@ -63,7 +63,7 @@ private FirebaseFirestore firestore;
                 bundle.putString("quant_vip",eventDetailsBinding.quantVip.getText().toString());
                 bundle.putString("prec_normal",event.getPreco_normal());
                 bundle.putString("prec_vip",event.getPreco_vip());
-
+                bundle.putString("event_id",event.getId_evento());
                 NavController navController = Navigation.findNavController(requireActivity(), R.id.nav_host_fragment_content_main);
                 navController.navigate(R.id.nav_checkout,bundle);
             }
