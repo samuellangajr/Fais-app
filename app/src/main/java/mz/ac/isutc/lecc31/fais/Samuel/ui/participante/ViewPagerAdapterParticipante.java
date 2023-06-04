@@ -4,8 +4,6 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-import mz.ac.isutc.lecc31.fais.Samuel.ui.home.HomeFragment;
-
 public class ViewPagerAdapterParticipante extends FragmentStateAdapter {
 
         public ViewPagerAdapterParticipante(Dashboard_participanteFragment dashboard_participanteFragment) {

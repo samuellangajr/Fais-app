@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
-
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/card"
         android:layout_width="match_parent"
@@ -19,6 +18,7 @@
 
             <!-- Media -->
             <ImageView
+                android:id="@+id/eventImage"
                 android:layout_width="match_parent"
                 android:layout_height="194dp"
                 android:scaleType="centerCrop"
@@ -32,12 +32,14 @@
 
                 <!-- Title, secondary and supporting text -->
                 <TextView
+                    android:id="@+id/eventTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Sabor do Verão"
                     android:textAppearance="?attr/textAppearanceHeadline6" />
 
                 <TextView
+                    android:id="@+id/eventPrice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
@@ -46,6 +48,7 @@
                     android:textColor="@color/orange" />
 
                 <TextView
+                    android:id="@+id/eventVipPrice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
@@ -59,7 +62,7 @@
                     android:layout_marginTop="8dp">
 
                     <TextView
-                        android:id="@+id/tvTickets"
+                        android:id="@+id/eventTickets"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
@@ -68,7 +71,7 @@
                         android:textColor="@color/black" />
 
                     <TextView
-                        android:id="@+id/tvDate"
+                        android:id="@+id/eventDate"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"

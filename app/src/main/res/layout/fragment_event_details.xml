@@ -168,17 +168,5 @@
                 android:textSize="16sp" />
         </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
-            android:layout_weight="1"
-            android:text="@string/outros_eventos"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <include layout="@layout/event_card2" />
-
-        <include layout="@layout/event_card3" />
     </LinearLayout>
 </ScrollView>
