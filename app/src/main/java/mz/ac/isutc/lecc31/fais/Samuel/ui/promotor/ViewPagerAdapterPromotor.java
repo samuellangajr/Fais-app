@@ -19,11 +19,10 @@ public class ViewPagerAdapterPromotor extends FragmentStateAdapter {
             case 1:
                 return new Participantes_promotorFragment();
             case 2:
-                return new Reservados_promotorFragment();
-            case 3:
                 return new Movimentos_promotorFragment();
-            case 4:
+            case 3:
                 return new CheckinFragment();
+
             default:
                 return new Compras_promotorFragment();
         }
@@ -32,7 +31,7 @@ public class ViewPagerAdapterPromotor extends FragmentStateAdapter {
     //numero de fragmentos
     @Override
     public int getItemCount() {
-        return 5;
+        return 4;
     }
 
 }

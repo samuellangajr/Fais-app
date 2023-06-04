@@ -18,8 +18,6 @@ public class ViewPagerAdapterParticipante extends FragmentStateAdapter {
             case 0:
                 return new Compras_participanteFragment();
             case 1:
-                return new Reservas_participanteFragment();
-            case 2:
                 return new Movimentos_participanteFragment();
             default:
                 return new Compras_participanteFragment();
@@ -29,7 +27,7 @@ public class ViewPagerAdapterParticipante extends FragmentStateAdapter {
     //numero de fragmentos
     @Override
     public int getItemCount() {
-        return 3;
+        return 2;
     }
 
 }

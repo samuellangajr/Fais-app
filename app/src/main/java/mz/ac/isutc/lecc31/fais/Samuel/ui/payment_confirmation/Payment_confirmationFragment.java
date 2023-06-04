@@ -19,7 +19,8 @@ import java.util.UUID;
 
 import mz.ac.isutc.lecc31.fais.Samuel.R;
 import mz.ac.isutc.lecc31.fais.Samuel.databinding.FragmentPaymentConfirmationBinding;
-
+import android.text.format.DateFormat;
+import java.util.Date;
 public class Payment_confirmationFragment extends Fragment {
 private FragmentPaymentConfirmationBinding paymentConfirmationBinding;
 private FirebaseFirestore firestore;
@@ -65,6 +66,7 @@ private FirebaseFirestore firestore;
             @Override
             public void onClick(View view) {
                 String id_evento = bundle.getString("id_evento");
+                String evento = bundle.getString("evento");
                 String nome = bundle.getString("nome");
                 String email = bundle.getString("email");
                 String metodo = bundle.getString("metodo");
@@ -73,8 +75,8 @@ private FirebaseFirestore firestore;
                 int quantidade_vip = Integer.parseInt(bundle.getString("quantidade_vip","0"));
                 String precoN = bundle.getString("preco_normal");
                 String precoV = bundle.getString("preco_vip");
-
-                String id_venda = UUID.randomUUID().toString();
+                String currentDate = DateFormat.format("dd/MM/yyyy", new Date()).toString();
+                String currentTime = DateFormat.format("HH:mm", new Date()).toString();
 
                 // Crie um mapa com os dados da venda
                 Map<String, Object> saleData = new HashMap<>();
@@ -82,15 +84,18 @@ private FirebaseFirestore firestore;
                 // Inserir tickets normais
                 for(int i = 0; i < quantidade_normal; i++) {
                     String id_ticket = UUID.randomUUID().toString();
-                    saleData.put("id_venda", id_venda);
+                    saleData.put("id_ticket", id_ticket);
                     saleData.put("id_evento", id_evento);
                     saleData.put("id_comprador", auth.getCurrentUser().getUid());
-                    saleData.put("tipo_tickect", "normal");
+                    saleData.put("tipo_ticket", "normal");
+                    saleData.put("evento", evento);
                     saleData.put("nome", nome);
                     saleData.put("valor", precoN);
                     saleData.put("email", email);
                     saleData.put("metodo", metodo);
                     saleData.put("celular", celular);
+                    saleData.put("data_compra", currentDate);
+                    saleData.put("hora_compra", currentTime);
 
                     // Insira a venda na coleção "sales" do Firestore
                     firestore.collection("Vendas")
@@ -115,15 +120,18 @@ private FirebaseFirestore firestore;
                 // Inserir tickets VIP
                 for(int i = 0; i < quantidade_vip; i++) {
                     String id_ticket = UUID.randomUUID().toString();
-                    saleData.put("id_venda", id_venda);
+                    saleData.put("id_ticket", id_ticket);
                     saleData.put("id_evento", id_evento);
                     saleData.put("id_comprador", auth.getCurrentUser().getUid());
-                    saleData.put("tipo_tickect", "vip");
+                    saleData.put("tipo_ticket", "vip");
+                    saleData.put("evento", evento);
                     saleData.put("nome", nome);
                     saleData.put("valor", precoV);
                     saleData.put("email", email);
                     saleData.put("metodo", metodo);
                     saleData.put("celular", celular);
+                    saleData.put("data_compra", currentDate);
+                    saleData.put("hora_compra", currentTime);
 
                     // Insira a venda na coleção "sales" do Firestore
                     firestore.collection("Vendas")

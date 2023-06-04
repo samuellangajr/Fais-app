@@ -6,6 +6,21 @@
     tools:context=".ui.participante.Compras_participanteFragment">
 
 
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableLayout"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Clique em uma linha da tabela para ter acesso ao Qrcode"
+        android:textAlignment="center"
+        android:textColor="@color/orange"
+        tools:ignore="HardcodedText" />
+
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,7 +32,6 @@
         android:stretchColumns="*"
         android:shrinkColumns="*"
         android:background="@drawable/border">
-
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -31,7 +45,8 @@
                 android:padding="10dp"
                 android:gravity="center"
                 android:textColor="@color/black"
-                android:background="@drawable/border"/>
+                android:background="@drawable/border"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:id="@+id/evento"
@@ -40,14 +55,23 @@
                 android:background="@drawable/border"
                 android:gravity="center"
                 android:padding="10dp"
-                android:text="Nome"
+                android:text="Evento"
                 android:textColor="@color/black"
                 android:textSize="20dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Data-hora"
+                android:text="Data"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:background="@drawable/border"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hora"
                 android:textSize="20dp"
                 android:padding="10dp"
                 android:gravity="center"

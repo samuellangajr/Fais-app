@@ -68,19 +68,7 @@ private FirebaseFirestore firestore;
                 navController.navigate(R.id.nav_checkout,bundle);
             }
         });
-        eventDetailsBinding.reservar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String quant_normal = eventDetailsBinding.quantNormal.getText().toString();
-                String quant_vip= eventDetailsBinding.quantVip.getText().toString();
-                Bundle bundle = new Bundle();
-                bundle.putString("quantitade_normal",quant_normal);
-                bundle.putString("quantitade_normal",quant_vip);
 
-                NavController navController = Navigation.findNavController(requireActivity(), R.id.nav_host_fragment_content_main);;
-                navController.navigate(R.id.nav_checkout, bundle);
-            }
-        });
         return eventDetailsBinding.getRoot();
     }
 

@@ -25,9 +25,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Ticket"
-                android:textSize="20dp"
-                android:padding="10dp"
+                android:text="Tipo"
+                android:textSize="14dp"
+                android:padding="5dp"
                 android:gravity="center"
                 android:textColor="@color/black"
                 android:background="@drawable/border"/>
@@ -35,9 +35,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tipo"
-                android:textSize="20dp"
-                android:padding="10dp"
+                android:text="Evento"
+                android:textSize="15dp"
+                android:padding="5dp"
                 android:gravity="center"
                 android:textColor="@color/black"
                 android:background="@drawable/border"/>
@@ -46,8 +46,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Valor"
-                android:textSize="20dp"
-                android:padding="10dp"
+                android:textSize="15dp"
+                android:padding="5dp"
                 android:gravity="center"
                 android:textColor="@color/black"
                 android:background="@drawable/border"/>
@@ -55,13 +55,21 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Dat-hora"
-                android:textSize="20dp"
-                android:padding="10dp"
+                android:text="Data"
+                android:textSize="15dp"
+                android:padding="5dp"
                 android:gravity="center"
                 android:textColor="@color/black"
                 android:background="@drawable/border"/>
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hora"
+                android:textSize="15dp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:background="@drawable/border"/>
         </TableRow>
 
     </TableLayout>

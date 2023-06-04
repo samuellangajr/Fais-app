@@ -45,7 +45,7 @@
         android:background="@drawable/input_background"
         android:ems="10"
         android:hint="@string/password"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:padding="10sp" />
     <EditText
         android:id="@+id/repetir_password"
@@ -55,7 +55,7 @@
         android:background="@drawable/input_background"
         android:ems="10"
         android:hint="@string/repetir_password"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:padding="10sp" />
 
     <RadioGroup
