@@ -62,12 +62,11 @@ private FragmentComprasParticipanteBinding binding;
 
         TextView tipoCompraTextView = createTableCell(compra.getTipo_ticket());
         TextView nomeEventoTextView = createTableCell(compra.getEvento());
-        TextView dataTextView = createTableCell(compra.getData_compra());
-        TextView horaTextView = createTableCell(compra.getHora_compra());
+        TextView estadoTextView = createTableCell(compra.getEstado());;
         tableRow.addView(tipoCompraTextView);
         tableRow.addView(nomeEventoTextView);
-        tableRow.addView(dataTextView);
-        tableRow.addView(horaTextView);
+        tableRow.addView(estadoTextView);
+
 
         tableLayout.addView(tableRow);
         tableRow.setOnClickListener(new View.OnClickListener() {

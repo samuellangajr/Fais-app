@@ -96,6 +96,7 @@ private FirebaseFirestore firestore;
                     saleData.put("celular", celular);
                     saleData.put("data_compra", currentDate);
                     saleData.put("hora_compra", currentTime);
+                    saleData.put("estado", "não validado");
 
                     // Insira a venda na coleção "sales" do Firestore
                     firestore.collection("Vendas")
@@ -132,6 +133,7 @@ private FirebaseFirestore firestore;
                     saleData.put("celular", celular);
                     saleData.put("data_compra", currentDate);
                     saleData.put("hora_compra", currentTime);
+                    saleData.put("estado", "não validado");
 
                     // Insira a venda na coleção "sales" do Firestore
                     firestore.collection("Vendas")

@@ -23,7 +23,7 @@ ViewPagerAdapterPromotor adapter;
                              Bundle savedInstanceState) {
         dashboard_promotorBinding = FragmentDashboardPromotorBinding.inflate(getLayoutInflater());
         //Instanciar objecto viewPageAdapter
-        adapter = new ViewPagerAdapterPromotor(this);
+        adapter = new ViewPagerAdapterPromotor(this, getArguments());
 
         //Set adapter ao ViewPage do Activity main
         dashboard_promotorBinding.viewPage.setAdapter(adapter);
@@ -36,7 +36,6 @@ ViewPagerAdapterPromotor adapter;
                         //Devolve o item selecionado
                         dashboard_promotorBinding.viewPage.setCurrentItem(tab.getPosition());
                     }
-
                     @Override
                     public void onTabUnselected(TabLayout.Tab tab) {}
                     @Override
@@ -56,6 +55,7 @@ ViewPagerAdapterPromotor adapter;
                     }
                 }
         );
+
         return dashboard_promotorBinding.getRoot();
     }
 }

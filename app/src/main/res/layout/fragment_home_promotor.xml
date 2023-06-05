@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.promotor.Home_promotorFragment">
-
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableLayout"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Clique em uma linha da tabela para ter acesso aos dados do evento"
+        android:textAlignment="center"
+        android:textColor="@color/orange"
+        tools:ignore="HardcodedText" />
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -25,7 +38,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tipo"
+                android:text="Categoria"
                 android:textSize="20dp"
                 android:padding="10dp"
                 android:gravity="center"
@@ -39,23 +52,24 @@
                 android:background="@drawable/border"
                 android:gravity="center"
                 android:padding="10dp"
-                android:text="Nome"
+                android:text="Evento"
                 android:textColor="@color/black"
                 android:textSize="20dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Data-hora"
+                android:text="Data"
                 android:textSize="20dp"
                 android:padding="10dp"
                 android:gravity="center"
                 android:textColor="@color/black"
                 android:background="@drawable/border"/>
 
+
         </TableRow>
 
     </TableLayout>
 
 
-</ScrollView>
+</RelativeLayout>

@@ -13,6 +13,8 @@ public class Venda {
     private String valor;
     private String celular;
     private String email;
+
+    private String estado;
     public Venda() {
 
     }
@@ -110,5 +112,13 @@ public class Venda {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
     }
 }
