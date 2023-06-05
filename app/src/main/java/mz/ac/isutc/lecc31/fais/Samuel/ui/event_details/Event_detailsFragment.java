@@ -59,10 +59,22 @@ private FirebaseFirestore firestore;
                 Evento event = (Evento) bundle.getSerializable("evento");
                 Bundle bundle = new Bundle();
                 bundle.putString("event",event.getNome());
-                bundle.putString("quant_normal",eventDetailsBinding.quantNormal.getText().toString());
-                bundle.putString("quant_vip",eventDetailsBinding.quantVip.getText().toString());
-                bundle.putString("prec_normal",event.getPreco_normal());
-                bundle.putString("prec_vip",event.getPreco_vip());
+                if(eventDetailsBinding.quantNormal.getText().toString().equals("")){
+                    bundle.putString("quant_normal","0");
+                    bundle.putString("prec_normal","0");
+                }else{
+                    bundle.putString("quant_normal",eventDetailsBinding.quantNormal.getText().toString());
+                    bundle.putString("prec_normal",event.getPreco_normal());
+                }
+
+                if(eventDetailsBinding.quantVip.getText().toString().equals("")) {
+                    bundle.putString("quant_vip", "0");
+                    bundle.putString("prec_vip","0");
+                }else{
+                    bundle.putString("quant_vip",eventDetailsBinding.quantVip.getText().toString());
+                    bundle.putString("prec_vip",event.getPreco_vip());
+                }
+
                 bundle.putString("event_id",event.getId_evento());
                 NavController navController = Navigation.findNavController(requireActivity(), R.id.nav_host_fragment_content_main);
                 navController.navigate(R.id.nav_checkout,bundle);

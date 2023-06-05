@@ -35,8 +35,8 @@ private FirebaseFirestore firestore;
         if (bundle != null) {
             String id_evento = bundle.getString("id_evento");
             String evento = bundle.getString("evento");
-            String quantidade_normal = bundle.getString("quantidade_normal","0");
-            String quantidade_vip =  bundle.getString("quantidade_vip","0");
+            String quantidade_normal = bundle.getString("quantidade_normal");
+            String quantidade_vip =  bundle.getString("quantidade_vip");
             String nome = bundle.getString("nome");
             String email = bundle.getString("email");
             String metodo = bundle.getString("metodo");
@@ -44,8 +44,8 @@ private FirebaseFirestore firestore;
             String precoN = bundle.getString("preco_normal");
             String precoV = bundle.getString("preco_vip");
 
-            Double precoNormal = Double.parseDouble(precoN);
-            Double precoVip = Double.parseDouble(precoV);
+            Double precoNormal = Double.parseDouble(precoN)*Integer.parseInt(quantidade_normal);
+            Double precoVip = Double.parseDouble(precoV)*Integer.parseInt(quantidade_vip);
             Double total = precoNormal + precoVip;
 
             paymentConfirmationBinding.evento.setText("Evento: "+evento);
